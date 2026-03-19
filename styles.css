@@ -1,0 +1,180 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#bde7ff,#dff4ff,#a8dcff);
+
+}
+
+/* APP */
+
+.app{
+
+width:380px;
+
+background:rgba(255,255,255,0.5);
+
+backdrop-filter:blur(10px);
+
+border-radius:25px;
+
+padding:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+animation:aparecer 1s ease;
+
+}
+
+/* ANIMACION */
+
+@keyframes aparecer{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ENCABEZADO */
+
+.encabezado{
+
+text-align:center;
+margin-bottom:20px;
+
+}
+
+.encabezado h1{
+
+color:#1a6fa8;
+font-size:28px;
+
+}
+
+/* TARJETAS */
+
+.tarjeta{
+
+background:rgba(255,255,255,0.6);
+
+padding:18px;
+
+border-radius:18px;
+
+margin-bottom:15px;
+
+text-align:center;
+
+transition:0.3s;
+
+}
+
+.tarjeta:hover{
+
+transform:scale(1.03);
+
+}
+
+/* PERFIL */
+
+.perfil img{
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:10px auto;
+border:4px solid #0b3a6f;
+}
+
+/* BOTONES */
+
+.menu button{
+
+width:100%;
+
+padding:12px;
+
+margin-bottom:8px;
+
+border:none;
+
+border-radius:12px;
+
+background:linear-gradient(135deg,#6ec6ff,#a8e6ff);
+
+color:#045a8d;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.menu button:hover{
+
+transform:scale(1.05);
+
+background:linear-gradient(135deg,#5ab5f5,#8ddcff);
+
+}
+
+/* INFO */
+
+.info p{
+
+color:#0a4a6e;
+
+line-height:1.5;
+
+}
+
+.barra-inferior{
+
+display:flex;
+justify-content:space-around;
+align-items:center;
+
+background:#3f5fa3;
+
+padding:12px;
+
+border-radius:18px;
+
+margin-top:15px;
+
+font-size:22px;
+
+color:white;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+}
+
+.barra-inferior span{
+cursor:pointer;
+transition:0.3s;
+}
+
+.barra-inferior span:hover{
+transform:scale(1.2);
+}
